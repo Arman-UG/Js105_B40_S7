@@ -38,6 +38,18 @@
                   "Expensive";
                   console.log(result);
 
+    let user = {
+        username : "Arman" ,
+        role : "Admin" , 
+        active : true 
+    };
+    let massage = (user.role === "Admin" && user.active) ? "user access granted !":
+                  (user.role === "Admin" && !user.active) ? "Admin access revoked ":
+                  (user.role === "user" && user.active) ? "Admin access granted !":
+                  (user.role === "user" && !user.active) ? "user access revoked ":
+                        "access Denied"    
+                  console.log(massage);
+
 
 
 </script>
